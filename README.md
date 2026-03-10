@@ -1,14 +1,6 @@
 # nanobot-docker
 
-Docker deployment notes for the image published by this repository.
-
 ## Image
-
-Replace `aiqinxuancai` with the GitHub user or organization that owns this repository.
-
-```text
-ghcr.io/aiqinxuancai/nanobot:latest
-```
 
 The container uses the upstream `HKUDS/nanobot` Dockerfile and exposes port `18790`.
 
