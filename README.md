@@ -4,10 +4,10 @@ Docker deployment notes for the image published by this repository.
 
 ## Image
 
-Replace `<github-owner>` with the GitHub user or organization that owns this repository.
+Replace `aiqinxuancai` with the GitHub user or organization that owns this repository.
 
 ```text
-ghcr.io/<github-owner>/nanobot:latest
+ghcr.io/aiqinxuancai/nanobot:latest
 ```
 
 The container uses the upstream `HKUDS/nanobot` Dockerfile and exposes port `18790`.
@@ -25,7 +25,7 @@ mkdir -p ./data
 ```bash
 docker run --rm -it \
   -v "$(pwd)/data:/root/.nanobot" \
-  ghcr.io/<github-owner>/nanobot:latest onboard
+  ghcr.io/aiqinxuancai/nanobot:latest onboard
 ```
 
 3. Edit the generated config file:
@@ -76,7 +76,7 @@ Example `docker-compose.yml`:
 ```yaml
 services:
   nanobot:
-    image: ghcr.io/<github-owner>/nanobot:latest
+    image: ghcr.io/aiqinxuancai/nanobot:latest
     container_name: nanobot
     restart: unless-stopped
     ports:
